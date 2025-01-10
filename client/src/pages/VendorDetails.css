@@ -1,0 +1,38 @@
+.vendor-details-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.vendor-details-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.vendor-details-page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-details-page th, .vendor-details-page td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.vendor-details-page th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.vendor-details-page tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.vendor-details-page tr:hover {
+  background-color: #f1f1f1;
+}

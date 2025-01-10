@@ -1,0 +1,423 @@
+/* Home Section */
+.home {
+    background-image: url('./assets/banner.jpg'); /* Path to your banner image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Namebox (transparent box) */
+.home .namebox {
+    z-index: 2;
+    height: 400px;
+    width: 80%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Blue Container */
+.home .namebox .blue-container {
+    background-color: rgba(10, 32, 98, 0.725);
+    width: 48%;
+    height: 361px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    color: black;
+    text-align: left;
+}
+
+/* Heading Style inside Blue Container */
+.home .namebox .blue-container h2 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+    color: #ffffffeb;
+}
+
+/* H3 Style inside Blue Container */
+.home .namebox .blue-container h3 {
+    font-size: 4rem;
+    line-height: 1.5;
+    color: #ffffffeb;
+}
+
+/* Paragraph Style inside Blue Container */
+.home .namebox .blue-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    color: #ffffffeb;
+}
+
+/* Red Container (Image Slider) */
+.home .namebox .red-container {
+    background-color: rgba(255, 255, 255, 0);
+    width: 48%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider Container */
+.home .namebox .red-container .slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 1s ease-in-out;
+}
+
+/* Individual Slide Image Style */
+.home .namebox .red-container .slider .slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Animation for Sliding Images */
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    33% {
+        transform: translateX(-100%);
+    }
+    66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.home .namebox .red-container .slider {
+    animation: slideAnimation 9s infinite;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+/* Stats Item */
+.stat-item {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3e4246;
+    margin: 0;
+    transition: all 2s ease-in-out;
+}
+
+/* Yellow-Gold Line */
+.yellow-line {
+    height: 2px;
+    background-color: #ffd700; /* Yellow-gold color */
+    margin: 30px 0;
+}
+
+/* Centered Text Section */
+.centered-text {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.centered-text h1 {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.centered-text h2 {
+    font-size: 2rem;
+    color: #666;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
+/* Stats Section */
+/* Stats Section */
+/* Stats Section */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 0; /* Removed margin to eliminate the gap below */
+    padding: 0 20px;
+}
+
+/* Side-by-Side Section */
+.side-by-side-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 0px; /* Negative margin to bring Row 2 closer to Row 1 */
+}
+
+/* Side-by-Side Item */
+.side-by-side-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 48%;
+    margin-bottom: 0; /* Removed margin-bottom */
+}
+
+
+/* Image for Side-By-Side Section */
+.side-image {
+    width: 100%;
+    height: 65%;  /* Automatically adjust the height for portrait images */
+    object-fit: cover;
+    margin-bottom: 0; /* Remove space between image and text */
+    display: block; /* Ensures the image stays as a block element */
+}
+
+/* Text for Side-By-Side Section */
+.side-text {
+    width: 100%;
+    text-align: justify; /* Justify text to align with image width */
+    margin-top: 0; /* Remove any extra margin above text */
+}
+
+.side-text h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px; /* Slightly reduce the space below the header */
+}
+
+.side-text p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: justify; /* Ensure the paragraph text is justified */
+    margin-top: 0;  /* Remove any top margin to keep it aligned with the image */
+}
+
+/* Our Collaborations and Partners Heading */
+.collaborations-heading {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .collaborations-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;  /* Real yellow gold color */
+  }
+  
+ /* Our Collaborations and Partners Heading */
+.collaborations-heading {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  
+  .collaborations-heading h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffd700;  /* Real yellow gold color */
+  }
+  
+  /* Brand Logos Container */
+  .brand-logos-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 150px; /* Adjust this as per the logo size */
+    margin-bottom: 50px;
+  }
+  
+  /* Brand Logos Slider */
+  .brand-logos-slider {
+    display: flex;
+    width: auto;  /* Allow the slider container to grow as needed */
+    height: 100%;
+    animation: slideLogos 15s linear infinite; /* Continuous movement from right to left */
+  }
+  
+  /* Individual Brand Logo */
+  .brand-logo {
+    width: calc(33.33% - 20px); /* Each logo takes up about 33% of the width, minus the gap */
+    margin-right: 20px; /* Gap between logos */
+    object-fit: contain;
+  }
+  
+  /* Animation for Sliding Logos */
+  @keyframes slideLogos {
+    0% {
+      transform: translateX(100%); /* Start off-screen from the right */
+    }
+    100% {
+      transform: translateX(-100%); /* Move completely to the left */
+    }
+  }
+
+/* New Banner Section */
+.new-banner-section {
+    width: 100%;
+    height: 25vh; /* Adjust height as per requirement */
+    position: relative;
+    margin-top: 30px; /* Adds spacing between logo container and new banner */
+    overflow: hidden;
+}
+
+/* Container for the image */
+.new-banner-section .banner-image-container {
+    width: 100%;
+    height: 100%; /* Ensure the container takes full height of its parent */
+    background-image: url('./assets/banner-1.jpg'); /* Path to your image */
+    background-position: right; /* Aligns the image to the right */
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the image covers the container area */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5); /* Shadow effect over the image */
+    position: relative;
+}
+
+/* Text on the left side of the banner */
+.new-banner-section .banner-text {
+    position: absolute;
+    left: 20px; /* Adjust left space */
+    top: 50%; /* Vertically center the text */
+    transform: translateY(-50%); /* Adjust for true vertical centering */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    max-width: 50%; /* Limit the width so it doesn't overflow */
+}
+
+/* Button styling */
+.new-banner-section .banner-button {
+    position: absolute;
+    right: 20px; /* Align button to the right */
+    top: 70%; /* Position below the text */
+    transform: translateY(-50%);
+    background-color: #ffd700; /* Yellow button color */
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.new-banner-section .banner-button:hover {
+    background-color: #e0c000; /* Darken the yellow color on hover */
+}
+
+/* Make button responsive */
+@media (max-width: 768px) {
+    .new-banner-section .banner-button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+    .new-banner-section .banner-text {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+}
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it appears above other elements */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Close Button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: red;
+  }
+ /* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #ffd700; /* Yellow-gold color */
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

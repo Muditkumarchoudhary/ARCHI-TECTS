@@ -1,0 +1,40 @@
+.user-account-container {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.user-account-container h1 {
+    color: goldenrod;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.user-account-container h2{
+    color: rgb(14, 14, 14);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.user-details, .orders, .cart, .architects {
+  margin-bottom: 2rem;
+}
+
+.user-details p, .orders p, .cart p, .architects p {
+  margin: 0.5rem 0;
+}
+
+.orders ul, .cart ul, .architects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.orders li, .cart li, .architects li {
+  background-color: #000000;
+  padding: 1rem;
+  border: 1px solid #090909;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}

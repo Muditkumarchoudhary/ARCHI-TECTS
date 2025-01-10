@@ -1,0 +1,154 @@
+.projects-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.Bannerproject {
+  margin: 0;
+  width: 100%;
+  background-image: url('./assets/projects-banner.jpg'); /* Path to banner image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.Bannerproject::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 10, 37, 0.6); /* Blue overlay */
+  z-index: 1;
+}
+
+.Bannerproject-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.Bannerproject-text h1 {
+  font-size: 4rem;
+  margin: 0;
+  color: rgb(255, 182, 86); /* Ensure the text color is visible */
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 10px; /* Adjusted margin to bring it closer to the top */
+}
+
+.content p {
+  color: black;
+  text-align: center;
+  margin-top: 10px; /* Adjusted margin to bring it closer to the top */
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+
+.image-container {
+  width: 40%;
+}
+
+.image-container img {
+  max-width: 90%; /* Increased maximum width */
+  height: auto;
+}
+
+.text-container {
+  width: 600px;
+  text-align: left;
+}
+
+.text-container h1 {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text-container h2 {
+  font-size: 1.5rem;
+}
+.text-container p{
+    text-align: justify;
+}
+.text-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .text-container ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  .text-container ul li i{
+    color: black;
+  }
+  .container2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .image-container2 {
+    width: 40%;
+  }
+  
+  .image-container2 img {
+    align-self: right;
+    max-width: 90%;
+    height: auto;
+  }
+  
+  .content2 {
+    width: 40%;
+  }
+  
+  .content2 h1
+  {
+    text-align: left;
+    color: black;
+  }
+  .content2 h2 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  
+  .content2 p {
+    text-align: justify;
+    margin-bottom: 2rem;
+  }
+  
+  .content2 ul {
+    list-style: none;
+    text-align: left;
+  }
+  
+  .content2 ul li {
+    list-style-type: none;
+    padding: 0;
+  }
